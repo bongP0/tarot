@@ -1,0 +1,206 @@
+.contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contain > h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.4rem;
+    margin-bottom: 45px;
+}
+
+.contain .sub_deco {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+.contain .sub_deco::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 60px;
+    background: #000;
+    top: 20px;
+    left: 45%;
+}
+.contain .info_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 2rem;
+    margin: 50px 0 50px;
+}
+.title > h1 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 1.3rem;
+    z-index: 1;
+}
+.title > .T_line {
+    position: absolute;
+    width: 100%;
+    height: .1px;
+    background-color: #ccc;
+    top: 40%;
+}
+
+.info_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.info_list > .li_title {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+    letter-spacing: -.05px;
+    line-height: 1.5rem;
+}
+.li_title h1 {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.info_list > ul {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.info_list > ul > li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 10px;
+    color: #888;
+    line-height: 1.3rem;
+}
+
+.info_TypeList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.type_title {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+    letter-spacing: -.05px;
+    line-height: 1.5rem;
+}
+.type_title > h1 {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.type_Tap {
+    position: relative;
+    width: 100%;
+}
+.type_Tap > ul {
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+.type_Tap > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    color: #888;
+    cursor: pointer;
+}
+.type_Tap > ul > .type_TapItem.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.Tap_contents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tap_Content {
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+}
+.tap_Content > ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tap_Content > ul > li {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 20px 0 30px;
+}
+.tap_Content li > div {
+    margin-left: 30px;
+    width: 100%;
+}
+.tap_Content li > div > p {
+    padding: 10px;
+    background: #f9f9f9;
+    color: #888;
+    margin-top: 10px;
+    line-height: 1.3rem;
+}
+
+.tap_Content {
+    display: none;
+}
+.tap_Content.active {
+    display: block;
+}
+
+.Using_deck {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0 20px;
+}
+.Using_deck > .deck_title {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+    letter-spacing: -.05px;
+    line-height: 1.5rem;
+}
+.deck_title h1 {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.Using_deck > ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

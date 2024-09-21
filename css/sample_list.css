@@ -1,0 +1,147 @@
+.contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contain > h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.4rem;
+    margin-bottom: 45px;
+}
+
+.contain .sub_deco {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+.contain .sub_deco::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 60px;
+    background: #000;
+    top: 20px;
+    left: 45%;
+}
+.contain .info_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 2rem;
+    margin: 50px 0 50px;
+}
+.title > h1 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 1.3rem;
+    z-index: 1;
+}
+.title > .T_line {
+    position: absolute;
+    width: 100%;
+    height: .1px;
+    background-color: #ccc;
+    top: 40%;
+}
+
+.sample_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.sample_list > .sam_title {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+    letter-spacing: -.05px;
+    line-height: 1.5rem;
+}
+.sam_title h1 {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.list_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list_title ul {
+    display: flex;
+}
+.list_title .num, .list_title .type, .list_title .modification, .list_title .registration {
+    background: #f9f9f9;
+    height: 35px;
+    font-weight: bold;
+}
+.num, .type, .modification, .registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.num {
+    width: 50px;
+}
+.type {
+    width: 300px;
+}
+.modification, .registration {
+    width: 133px;
+}
+
+.list_content{
+    position: relative;
+}
+.list_content ul {
+    display: flex;
+}
+.list_content ul li {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px dotted #ccc;
+}
+.list_content ul li.modification{
+    border-left: 1px dotted #ccc;
+}
+.list_content ul li:last-child {
+    border-right: none;
+}
+.list_content:last-child ul li {
+    border-bottom: 2px solid #000;
+}
+.list_content ul a > li {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: #000;
+}
+.list_content ul a > li:hover {
+    color: rgb(35, 35, 63);
+    font-weight: bold;
+}

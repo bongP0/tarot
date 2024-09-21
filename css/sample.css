@@ -1,0 +1,92 @@
+.contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contain > h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.4rem;
+    margin-bottom: 45px;
+}
+
+.contain .sub_deco {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+.contain .sub_deco::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 60px;
+    background: #000;
+    top: 20px;
+    left: 45%;
+}
+.contain .info_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 2rem;
+    margin: 50px 0 50px;
+}
+.title > h1 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 1.3rem;
+    z-index: 1;
+}
+.title > .T_line {
+    position: absolute;
+    width: 100%;
+    height: .1px;
+    background-color: #ccc;
+    top: 40%;
+}
+
+.sample_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 720px;
+}
+swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    margin-bottom: 60px;
+}
+
+swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

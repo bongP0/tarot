@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/info.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <title>Infomation</title>
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <a href="../index.html">
+                    <img src="../resources/header/LOGO.svg" alt="Tarot-Logo">
+                </a>
+            </div>
+    
+            <section class="Main_Con">
+                <article class="Main_contents">
+                    <div class="contain">
+                        <div class="title">
+                            <h1>INFOMATION</h1>
+                            <div class="T_line"></div>
+                        </div>
+
+                        <h1>소개</h1>
+                        
+                        <div class="sub_deco"></div>
+
+                        <div class="info_list">
+                            <p>＊＊</p>
+                            <div class="li_title">
+                                <h1>리더</h1>
+                                <img src="../resources/info/Reader.svg" alt="Reader">
+                            </div>
+
+                            <ul>
+                                <li>당신이 생각하는 고민 거리를 같이 안고 대화로 풀어나갑니다.<br>
+                                    상담 시간에 제약을 두지 않는 편이며 티키타카가 편안한 분위기의 타로를 지향하고 있어요.<br>
+                                    실시간 및 PDF 정리 모두 가능하나 실시간 타로를 더 선호하는 편이에요.</li>
+                            </ul>
+                        </div>
+
+                        <div class="info_TypeList">
+                            <div class="type_title">
+                                <h1>타입 목록</h1>
+                                <img src="../resources/info/Type List.svg" alt="Type List">
+                            </div>
+
+                            <div class="type_Tap">
+                                <ul>
+                                    <li class="type_TapItem active" data-tab="tab-1">현생 타로</li>
+                                    <li class="type_TapItem" data-tab="tab-2">덕질 타로</li>
+                                </ul>
+
+                                <div class="Tap_contents">
+
+                                    <div class="tap_Content active" id="tab-1">
+                                        <ul>
+                                            <li>
+                                                <img src="../resources/info/today's.png" alt="today_luck">
+                                                <div>
+                                                    <h1>오늘의 운세 및 간단한 질의응답</h1>
+                                                    <p>오늘의 운세부터 간단하게 질문하고 싶은 것에 대하여 아무거나 질문을 던지는 타로 입니다.<br>
+                                                    심화로 올 해 운세 등도 보실 수 있습니다.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="../resources/info/love_luck.png" alt="love_luck">
+                                                <div>
+                                                    <h1>애정운 (평균 1시간 소요)</h1>
+                                                    <p>상대가 나를 어떻게 생각하는지, 또 내 마음은 어떤지, 애정 관계에서 조언을 구하고 싶을 때 보기 좋은 타로 입니다.<br>
+                                                    같이 대화를 나누며 속에 담아둔 이야기를 풀고 조언을 드립니다.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="../resources/info/relationship_luck.png" alt="relationship_luck">
+                                                <div>
+                                                    <h1>관계운 (평균 1시간 소요)</h1>
+                                                    <p>모든 대인 관계에 있어 어려움이나 상대의 생각을 알아보며 조언을 구하고 싶을 때 보기 좋은 타로 입니다.<br>
+                                                    속에 담아둔 이야기를 꺼내 말씀해주시면 조금 더 자세한 조언을 드릴 수 있습니다.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="../resources/info/career_counseling.png" alt="career_counseling">
+                                                <div>
+                                                    <h1>진로상담 (평균 1시간 소요)</h1>
+                                                    <p>길을 잃어버린 것 같아 앞이 막막하고 두려울 때 나에 대한 이야기와 현재 그리고 미래에 대한 조언을 드립니다.<br>
+                                                    현재 안고있는 불안이나 고민에 대해서 말씀해 주시면 조금 더 자세한 조언을 드릴 수 있습니다.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tap_Content" id="tab-2">
+                                        <ul>
+                                            <li>
+                                                <img src="../resources/info/Compatibility.png" alt="Compatibility">
+                                                <div>
+                                                    <h1>궁합 (스프레드 당 약 1시간 소요)</h1>
+                                                    <p>관계의 꽃이라고 할 수 있는 궁합 타로 입니다.<br>
+                                                    정보가 상세할 수록 더욱 재밌게 즐기실 수 있을 것 같습니다.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="../resources/info/world of if.png" alt="World Of If">
+                                                <div>
+                                                    <h1>IF의 세계 (스프레드 당 약 1시간 소요)</h1>
+                                                    <p>IF의 세계에서 캐릭터는 어떻게 행동하고 어떤 사건이 벌어질까요?<br>
+                                                    정보가 상세할 수록 더욱 재밌게 즐기실 수 있을 것 같습니다.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="../resources/info/AU.png" alt="AU">
+                                                <div>
+                                                    <h1>AU (스프레드 당 약 1시간 소요)</h1>
+                                                    <p>AU의 상황에서 캐릭터는 어떤 직업과 특성을 가지고 있고 어떤 사건이 벌어질까요?<br>
+                                                    정보가 상세할 수록 더욱 재밌게 즐기실 수 있을 것 같습니다.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="Using_deck">
+                            <div class="deck_title">
+                                <h1>사용 덱</h1>
+                                <img src="../resources/info/Using Deck.svg" alt="Using_Deck">
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <img src="../resources/info/dome.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../resources/info/dome.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../resources/info/dome.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../resources/info/dome.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../resources/info/dome.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </article>
+     
+                <nav>
+                    <h1>Tarot</h1>
+                    
+                    <ul>
+                        <a href="notice.html"><li>통합 공지</li></a>
+                        <a href="info.html"><li><strong style="color: #000;">소개</strong></li></a>
+                        <a href="https://docs.google.com/spreadsheets/d/1TGl-SMBl4lXHCx-hfvh7UTQt386V8yX6jeEAXoihJCg/edit?usp=sharing" target="_blank"><li>예약 현황</li></a>
+                        <a href="sample_list.html"><li>타입별 샘플</li></a>
+                    </ul>
+    
+                    <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:235px;height:75px;"src="https://www.clocklink.com/html5embed.php?clock=038&timezone=KoreaDemocraticPeoplesRepublicof_Pyongyang&color=black&size=300&Title=&Message=&Target=&From=2024,1,1,0,0,0&Color=black"></iframe>
+    
+                </nav>
+            </section>
+    </div>
+    <footer>Copyright 2024. HiYa All pictures cannot be copied without permission.</footer>
+    
+</body>
+</html>

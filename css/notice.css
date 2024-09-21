@@ -1,0 +1,169 @@
+.contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contain > h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.4rem;
+    margin-bottom: 45px;
+}
+
+.contain .sub_deco {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+.contain .sub_deco::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 60px;
+    background: #000;
+    top: 20px;
+    left: 45%;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 2rem;
+    margin: 50px 0 50px;
+}
+.title > h1 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 1.3rem;
+    z-index: 1;
+}
+.title > .T_line {
+    position: absolute;
+    width: 100%;
+    height: .1px;
+    background-color: #ccc;
+    top: 40%;
+}
+
+.contain .No_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+
+.No_list > p {
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: -.5rem;
+    line-height: 3rem;
+}
+
+.No_list > ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.No_list > ul > li {
+    width: 100%;
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    color: #888 ;
+}
+.No_list > ul > li:first-child {
+    margin-top: 0;
+}
+.No_list > ul > li:last-child {
+    margin-bottom: 20px;
+}
+.No_list li:nth-child(7) {
+    display: flex;
+}
+.No_list li:nth-child(7) > p:first-child {
+    width: 4rem;
+}
+.No_list li:nth-child(7) > p:nth-child(2) {
+    width: 2rem;
+}
+
+.Tarot_Appliction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.Tarot_Appliction > .result_title {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Tarot_Appliction > .result_title > h1 {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.Tarot_Appliction > .result_txt {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    color: #888;
+    letter-spacing: -.05px;
+    line-height: 1.5rem;
+}
+.Tarot_Appliction > .result_txt::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    background: #000;
+    top: .6rem;
+    left: 0;
+}
+
+.Tarot_Appliction > .result_App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.Tarot_Appliction > .result_App > .kakao, .Tarot_Appliction > .result_App > .crepe {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #f9f9f9;
+    padding: 10px;
+}
+.kakao > a, .crepe > a {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    margin-left: 10px;
+    padding: 10px;
+    color: #888;
+    text-decoration: none;
+    transition: .5s;
+}
+.kakao > a:hover, .crepe > a:hover {
+    color: #000;
+    text-decoration: underline;
+}
